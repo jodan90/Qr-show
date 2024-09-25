@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR 코드 생성기</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>QR 코드 생성기</h1>
+    <form action="/generate" method="POST" enctype="multipart/form-data">
+        <label for="url">URL을 입력하세요:</label>
+        <input type="text" id="url" name="url" placeholder="https://example.com" required>
+        <button type="submit">QR 코드 생성</button>
+    </form>
+    <div id="qrcode">
+    </div>
+</div>
+</body>
+</html>
